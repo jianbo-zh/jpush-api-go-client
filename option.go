@@ -28,3 +28,7 @@ func (this *Option) SetApns(apns bool) {
 func (this *Option) SetBigPushDuration(bigPushDuration int) {
 	this.BigPushDuration = bigPushDuration
 }
+
+func (this *Option) SetThirdPartyChannel(thirdPartyChannel map[string]map[string]interface{}) {
+	this.ThirdPartyChannel = thirdPartyChannel
+}

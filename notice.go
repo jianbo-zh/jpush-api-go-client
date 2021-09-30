@@ -8,12 +8,18 @@ type Notice struct {
 }
 
 type AndroidNotice struct {
-	Alert       string                 `json:"alert"`
-	Sound       string                 `json:"sound,omitempty"`
-	Title       string                 `json:"title,omitempty"`
-	UriActivity string                 `json:"uri_activity,omitempty"`
-	BuilderId   int                    `json:"builder_id,omitempty"`
-	Extras      map[string]interface{} `json:"extras,omitempty"`
+	Alert             string                 `json:"alert"`
+	Sound             string                 `json:"sound,omitempty"`
+	Title             string                 `json:"title,omitempty"`
+	UriActivity       string                 `json:"uri_activity,omitempty"`
+	UriAction         string                 `json:"uri_action"`
+	BuilderId         int                    `json:"builder_id,omitempty"`
+	AlertType         int                    `json:"alert_type"`
+	Priority          int                    `json:"priority"`
+	BadgeAddNum       int                    `json:"badge_add_num,omitempty"`
+	BadgeClass        string                 `json:"badge_class,omitempty"`
+	DisplayForeground string                 `json:"display_foreground,omitempty"`
+	Extras            map[string]interface{} `json:"extras,omitempty"`
 }
 
 type IOSNotice struct {
