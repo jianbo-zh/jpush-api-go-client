@@ -14,6 +14,7 @@ type AndroidNotice struct {
 	UriActivity       string                 `json:"uri_activity,omitempty"`
 	UriAction         string                 `json:"uri_action"`
 	BuilderId         int                    `json:"builder_id,omitempty"`
+	ChannelId         string                 `json:"channel_id,omitempty"`
 	AlertType         int                    `json:"alert_type"`
 	Priority          int                    `json:"priority"`
 	BadgeAddNum       int                    `json:"badge_add_num,omitempty"`
